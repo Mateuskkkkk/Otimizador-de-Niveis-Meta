@@ -10,7 +10,7 @@ import { saveAs } from "file-saver";
 // CONFIGURAÇÃO DA API
 // ─────────────────────────────────────────────────────────────────────────────
 // Altera esta variável quando publicares o backend no Render
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api"
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TYPES & CONSTANTS
